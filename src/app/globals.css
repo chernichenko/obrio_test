@@ -1,9 +1,9 @@
 :root {
   --main-bg: #FFF0F0;
+  --purple-gradient: linear-gradient(165.54deg, #141333 -33.39%, #202261 15.89%, #543C97 55.84%, #6939A2 74.96%);
   --title: #333333;
   --black: #000000;
   --white: #FBFBFF;
-  --purple-gradient: linear-gradient(165.54deg, #141333 -33.39%, #202261 15.89%, #543C97 55.84%, #6939A2 74.96%);
 }
 
 html,

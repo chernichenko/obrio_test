@@ -1,0 +1,31 @@
+:root {
+  --btn-text: #201F1F;
+  --btn-bg: #EAEEF7;
+  --btn-border: #E0E0E0;
+  --btn-shadow: #543C9740;
+  --btn-hover-text: #FBFBFF;
+}
+
+.btn {
+  width: 100%;
+  max-width: 330px;
+  height: 64px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  color: var(--btn-text);
+  background: var(--btn-bg);
+  border-radius: 16px;
+  border: 1px solid var(--btn-border);
+  outline: none;
+  box-shadow: 2px 2px 6px 0px var(--btn-shadow);
+  cursor: pointer;
+}
+
+.btn:hover,
+.btn:active,
+.btn:focus {
+  background: var(--purple-gradient);
+  color: var(--btn-hover-text);
+}
