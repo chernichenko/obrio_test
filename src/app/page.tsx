@@ -1,11 +1,18 @@
-import Button from "@/components/Button/Button";
+'use client';
 
-import styles from "./page.module.css";
+import { useEffect } from 'react';
+import { useRouter } from 'next/navigation';
+import quizData from '@/assets/json/common.json';
 
 export default function App() {
-  return (
-    <div className={styles.pageWrap}>
-     <Button>Yes</Button>
-    </div>
-  );
+  const router = useRouter();
+
+  useEffect(() => {
+    if (quizData.steps?.length > 0) {
+      const firstQuestionId = quizData.steps[0].id;
+      router.push(`/quiz/${firstQuestionId}`);
+    }
+  }, [router]);
+  
+  return null;
 }

@@ -4,6 +4,11 @@
   --title: #333333;
   --black: #000000;
   --white: #FBFBFF;
+  --btn-text: #201F1F;
+  --btn-bg: #EAEEF7;
+  --btn-border: #E0E0E0;
+  --btn-shadow: #543C9740;
+  --btn-hover-text: #FBFBFF;
 }
 
 html,

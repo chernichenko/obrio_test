@@ -1,15 +1,8 @@
-:root {
-  --btn-text: #201F1F;
-  --btn-bg: #EAEEF7;
-  --btn-border: #E0E0E0;
-  --btn-shadow: #543C9740;
-  --btn-hover-text: #FBFBFF;
-}
-
 .btn {
   width: 100%;
   max-width: 330px;
   height: 64px;
+  padding: 0 16px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -26,6 +19,18 @@
 .btn:hover,
 .btn:active,
 .btn:focus {
+  background: var(--purple-gradient);
+  color: var(--btn-hover-text);
+}
+
+.btn.white {
+  color: #6A3AA2;
+  background: var(--white);
+}
+
+.btn.white:hover,
+.btn.white:active,
+.btn.white:focus {
   background: var(--purple-gradient);
   color: var(--btn-hover-text);
 }

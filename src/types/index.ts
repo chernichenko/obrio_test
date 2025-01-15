@@ -3,23 +3,33 @@ export enum ScreenType {
   Info = "info",
 }
 
-export interface QuestionOption {
+export interface IStepOption {
   label: string;
   value: string;
-  nextQuestionId: number | null;
-  nextInfoId?: number;
+  nextQuestionId: string | null;
+  nextInfoId?: string;
 }
 
-export interface Question {
-  id: number;
-  screenType: ScreenType;
+export interface IStep {
+  id: string;
+  neededAnswer?: {
+    key: string;
+    stepId: string;
+  };
+  screenType: ScreenType | string;
   title: string;
   subtitle?: string;
   description?: string;
   button?: string;
-  options?: QuestionOption[];
+  options?: IStepOption[];
 }
 
-export interface Survey {
-  questions: Question[];
+export interface IQuizData {
+  steps: IStep[];
+}
+
+export interface IAnswer {
+  id: string;
+  value: string;
+  label: string;
 }

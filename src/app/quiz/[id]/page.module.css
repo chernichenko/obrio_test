@@ -1,0 +1,17 @@
+.wrap {
+  width: 100%;
+  height: 100vh;
+  overflow-y: auto;
+  background: var(--main-bg);
+}
+
+.gradientMode {
+  background: var(--purple-gradient);
+}
+
+.container {
+  width: 100%;
+  padding: 20px 15px;
+  display: flex;
+  justify-content: center;
+}

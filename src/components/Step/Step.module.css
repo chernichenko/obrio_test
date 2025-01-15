@@ -1,0 +1,38 @@
+.wrap {
+  width: 100%;
+  max-width: 330px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  color: var(--title);
+}
+
+.title {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.subtitle {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.description {
+  text-align: center;
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+.options {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.infoWrap {
+  color: var(--white);
+}
+
+.infoWrap .title {
+  text-align: center;
+}

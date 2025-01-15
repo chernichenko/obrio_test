@@ -1,0 +1,28 @@
+.wrap {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  width: 100%;
+  max-width: 360px;
+  padding: 20px 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.answers {
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+}
+
+.answer {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-size: 18px;
+  color: var(--title);
+}
